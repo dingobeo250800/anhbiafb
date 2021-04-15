@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>banner_facebook</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    	.banner_facebook{
+    		background-image: url(banner_facebook.jpg);
+		    min-height: 900px;
+		    background-position: center;
+		    background-size: cover;
+		    background-repeat: no-repeat;
+		    position:relative;
+		    transition: 2s;
+    	}
+    	.auto {
+		    position: absolute;
+		    bottom: -5%;
+		    transform: translateX(-50%);
+		    left: 50%;
+    	}
+    	.avarta {
+		    position: relative;
+		    background-image: url(avarta.jpg);
+		    width: 300px;
+		    min-height: 300px;
+		    border-radius: 50%;
+		    border: 5px solid #fff;
+		    background-repeat: no-repeat;
+    		background-size: cover;
+    		transition: 2s;
+    	}
+    	.avarta div {
+    		color: white;
+    		font-size: 30px;
+    		position: absolute;
+		    bottom: 55px;
+		    right: 35px;
+		    transform: translate(50%, 50%);
+		    background: grey;
+		    width: 60px;
+		    height: 60px;
+		    border-radius: 50%;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    transition: 2s;
+    	}
+    	.edit_img {
+    		position: absolute;
+		    bottom: 0;
+		    right: -4%;
+		    width: 160px;
+		    height: 45px;
+		    background: #fff;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    border-radius: 10px;
+		    transform: translate(-50%, -50%);
+
+    	}
+    	.edit_img i {
+    		padding-right: 5px;
+    	}
+
+    	@media (max-width: 700px) {
+    		.avarta {
+			    width: 200px;
+			    min-height: 200px;
+			}
+			.avarta div {
+				font-size: 25px;
+			    bottom: 50px;
+			    right: 15px;
+			    width: 50px;
+			    height: 50px;
+			}
+			.edit_img {
+				display: none;
+				font-size: 20px;
+			}
+    	}
+    </style>
+</head>
+<body>
+	<div class="container banner_facebook">
+		<div class="auto">
+			<div class="avarta">
+				<div><i class="fas fa-camera"></i></div>
+			</div>
+		</div>
+		<div class="edit_img">
+			<i class="fas fa-camera"></i>
+		Chỉnh sửa ảnh bìa
+		</div>
+	</div>
+</body>
